@@ -1,0 +1,9 @@
+  //intervaliD;
+  componentDidMount() {
+    this.props.fetchSurveys();
+    //this.intervaliD = setInterval(this.props.fetchSurveys.bind(this), 10000);
+  }
+
+  // componentWillUnmount() {
+  //   clearInterval(this.intervaliD);
+  // }
