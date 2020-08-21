@@ -35,22 +35,7 @@ export class SurveyList extends Component {
           />
           <RenderSurveys surveys={this.state.surveys} />
         </div>
-      ) : (
-        <div style={{ textAlign: 'center', marginTop: '100px' }}>
-          <h6>
-            Maes solo apreten 'Login con google' tienen que tener una cuenta en
-            google, apreten agregar creditos el numero de la tarjeta es{' '}
-            <span style={{ color: 'red', fontSize: '15px' }}>
-              4242 4242 4242 4242, 01/29{' '}
-            </span>
-            es la fecha y el codigo es
-            <span style={{ color: 'red', fontSize: '15px' }}> 123 </span> y
-            apreten pagar y luego apreten el{' '}
-            <span style={{ color: 'red', fontSize: '30px' }}>+</span> de la
-            parte de abajo y sigan los pasos.
-          </h6>
-        </div>
-      );
+      ) : null;
     }
   }
 }

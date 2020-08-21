@@ -16,11 +16,18 @@ export class Header extends Component {
         return;
       case false:
         return (
-          <li>
-            <a className='red btn' href='/auth/google'>
-              Login con Google
-            </a>
-          </li>
+          <Fragment>
+            <li>
+              <a className='red btn' href='/auth/google'>
+                Login con Google
+              </a>
+            </li>
+            <li>
+              <Link to='/about' className='yellow darken-3 btn'>
+                Sobre esta Aplicacion
+              </Link>
+            </li>
+          </Fragment>
         );
       default:
         return (
@@ -39,6 +46,11 @@ export class Header extends Component {
             <li>
               <button className='btn red'>
                 <a href='/api/logout'>Cerrar Sesion</a>
+              </button>
+            </li>
+            <li>
+              <button className='btn yellow darken-3 white-text'>
+                <Link to='/about'>Sobre esta Aplicacion</Link>
               </button>
             </li>
           </Fragment>

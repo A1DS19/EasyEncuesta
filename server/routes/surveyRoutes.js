@@ -13,7 +13,7 @@ const Survey = mongoose.model('Survey');
 module.exports = (app) => {
   app.get('/api/surveys/:surveyId/:response/thanks', (req, res) => {
     const { response } = req.params;
-    res.send(`Gracias por el ${response === 'yes' ? 'si' : 'no'} carepicha!`);
+    res.send(`Gracias por el ${response === 'yes' ? 'si' : 'no'}!`);
   });
 
   //Devuelve las surveys del usuario logeado(no se incluye los recipients)
